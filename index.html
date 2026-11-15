@@ -412,7 +412,7 @@ body {
                 và truyền thống tôn sư trọng đạo nhé!
             </p>
             <p>
-                🌸 10 câu hỏi - 4 đáp án - 1 hành trình tri ân 🌸
+                🌸 5 câu hỏi - 4 đáp án - 1 hành trình tri ân 🌸
             </p>
             <button class="primary-btn" onclick="startGame()">
                 BẮT ĐẦU NGAY ✨
@@ -561,66 +561,6 @@ const questions = [
     ],
     correct: 0,
     explain: "Câu tục ngữ khẳng định vai trò quan trọng của người thầy trong quá trình học tập và trưởng thành."
-},
-
-{
-    question: "Thầy cô không chỉ dạy kiến thức mà còn dạy chúng ta điều gì?",
-    answers: [
-        "Cách sống và làm người",
-        "Cách kiếm tiền",
-        "Cách nổi tiếng",
-        "Cách né tránh trách nhiệm"
-    ],
-    correct: 0,
-    explain: "Thầy cô còn giáo dục đạo đức, nhân cách và những bài học làm người."
-},
-
-{
-    question: "Ý nghĩa sâu sắc nhất của truyền thống “Tôn sư trọng đạo” là gì?",
-    answers: [
-        "Chỉ kính trọng thầy cô trong ngày lễ",
-        "Biết ơn người dạy dỗ và trân trọng tri thức",
-        "Chỉ cần đạt điểm cao",
-        "Luôn làm theo mọi ý kiến mà không suy nghĩ"
-    ],
-    correct: 1,
-    explain: "Tôn sư trọng đạo là biết ơn người dạy dỗ, đồng thời trân trọng tri thức và đạo lý."
-},
-
-{
-    question: "Trong giờ học, bạn thấy một bạn trong lớp nói chuyện và làm việc riêng khi giáo viên đang giảng bài. Bạn sẽ làm gì?",
-    answers: [
-        "Mặc kệ vì không liên quan đến mình.",
-        "Nói chuyện cùng bạn.",
-        "Nhắc nhở bạn giữ trật tự và tập trung học.",
-        "Cười đùa theo bạn."
-    ],
-    correct: 2,
-    explain: "Nhắc nhở bạn một cách lịch sự thể hiện sự tôn trọng thầy cô và ý thức xây dựng lớp học."
-},
-
-{
-    question: "Một người bạn cho rằng ngày 20/11 chỉ cần tặng quà đắt tiền là đủ thể hiện lòng biết ơn. Bạn sẽ giải thích thế nào?",
-    answers: [
-        "Đồng ý vì quà càng đắt càng quý.",
-        "Lòng biết ơn không nằm ở giá trị món quà mà ở sự chân thành và hành động.",
-        "Không cần quan tâm đến ngày 20/11.",
-        "Chỉ cần đăng ảnh tặng quà lên mạng."
-    ],
-    correct: 1,
-    explain: "Lòng biết ơn được thể hiện qua sự chân thành, thái độ kính trọng và những hành động thiết thực."
-},
-
-{
-    question: "Hành động nào sau đây thể hiện lòng biết ơn thầy cô một cách thiết thực nhất?",
-    answers: [
-        "Chỉ tặng hoa vào ngày 20/11.",
-        "Chăm chỉ học tập, lễ phép và cố gắng rèn luyện mỗi ngày.",
-        "Chỉ chúc mừng thầy cô khi được nhắc nhở.",
-        "Tặng quà để được thầy cô chú ý."
-    ],
-    correct: 1,
-    explain: "Sự chăm chỉ, lễ phép và nỗ lực học tập mỗi ngày chính là những món quà ý nghĩa dành tặng thầy cô."
 }
 
 ];
@@ -789,7 +729,7 @@ function showResult() {
     let message = "";
     let trophy = "";
 
-    if (points === 10) {
+    if (points === questions.length) {
 
         message = "XUẤT SẮC! Bạn đã trả lời đúng tất cả câu hỏi. Thật đáng tự hào!";
         trophy = "🏆";
